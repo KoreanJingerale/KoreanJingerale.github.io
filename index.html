@@ -35,12 +35,21 @@ li a:hover:not(.active) {
   </head>
     </style>
   <body>
+    <script>
+      function myFunction(){
+        document.getElementbyID("demo").innerHTML="Secret Text";
+      }
+    </script>
+    <button type="button" onclick="myFunction()">DO NOT PRESS</button>
     <div style="padding:20px;margin-top:30px;background-color:#1ABC9C;height:1500px;">
     <h1>Home Page</h1>
     <p style="color: #333300;">This is a paragraph :D.</p>
     <ul>
   <li><a class="active" href="http://KoreanJingerale.github.io/index.html">Home</a></li>
   <li><a href="http://KoreanJingerale.github.io/about.html">About</a></li>
+  <li><a href="#pictures">Pictures</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#support">Support</a></li>
     </ul>
     </div>
   </body>
