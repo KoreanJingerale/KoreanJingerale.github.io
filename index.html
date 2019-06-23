@@ -8,27 +8,21 @@
         document.getElementByID("demo").innerHTML="Secret Text";
       }
     </script>
-      <style>
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-    ul {
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {margin: 0;}
+
+ul.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-    li {
-  float: left;
 }
 
-li a {
+ul.topnav li {float: left;}
+
+ul.topnav li a {
   display: block;
   color: white;
   text-align: center;
@@ -36,12 +30,18 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: #111;
-}
+ul.topnav li a:hover:not(.active) {background-color: #111;}
 
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
 .active {
-  background-color: #037;
+  background-color: #4CAF50;
 }
     </style>
   </head>
@@ -53,8 +53,8 @@ li a:hover:not(.active) {
     <button type="button" onclick="myFunction()">DO NOT PRESS</button>
     <div style="padding:20px;margin-top:30px;background-color:#1ABC9C;height:1500px;">
     <img src="https://media.giphy.com/media/HqfTYyZr6w8eY/giphy.gif" style="width:450px;height:300px;">
-    <p style="color: blue;">My Little Pony is a toy line and media franchise mainly targeting girls, developed by American toy company Hasbro. The first toys were developed by Bonnie Zacherle, Charles Muenchinger, and Steve D'Aguanno, and were produced in 1981. The ponies feature colorful bodies, manes and a unique symbol on one or both sides of their flanks. Such symbols are referred to in the two most recent incarnations as "cutie marks". My Little Pony has been revamped several times with new and more modern looks to appeal to a new market.</p>
-    <ul>
+    <p style="color: #red;">My Little Pony is a toy line and media franchise mainly targeting girls, developed by American toy company Hasbro. The first toys were developed by Bonnie Zacherle, Charles Muenchinger, and Steve D'Aguanno, and were produced in 1981. The ponies feature colorful bodies, manes and a unique symbol on one or both sides of their flanks. Such symbols are referred to in the two most recent incarnations as "cutie marks". My Little Pony has been revamped several times with new and more modern looks to appeal to a new market.</p>
+    <ul class="topnav">
   <li><a class="active" href="http://KoreanJingerale.github.io/index.html">Home</a></li>
   <li><a href="http://KoreanJingerale.github.io/about.html">About</a></li>
   <li><a href="#pictures">Pictures</a></li>
