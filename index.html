@@ -48,7 +48,7 @@ body {
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: left;
+    float: right;
     display: block;
   }
 }
@@ -84,5 +84,16 @@ body {
     <img src="https://media.giphy.com/media/HqfTYyZr6w8eY/giphy.gif" style="width: 50%;height:auto;">
     <p style="color: red;">My Little Pony is a toy line and media franchise mainly targeting girls, developed by American toy company Hasbro. The first toys were developed by Bonnie Zacherle, Charles Muenchinger, and Steve D'Aguanno, and were produced in 1981. The ponies feature colorful bodies, manes and a unique symbol on one or both sides of their flanks. Such symbols are referred to in the two most recent incarnations as "cutie marks". My Little Pony has been revamped several times with new and more modern looks to appeal to a new market.</p>
     </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
   </body>
 </html>
